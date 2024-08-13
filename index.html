@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Temperature Converter</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h1 class = "text-center">Temperature Converter</h1>
+  <div class ="container h-100 d-flex justify-content-center">
+    <div>
+      <input type="number" placeholder="Insert Temperature Here" id="initialTemp"/>
+      <br />
+      <label for="temperature">Measurement:</label>
+      <select name="temperature" id="fromtemp">
+        <option value="Celsius">Celsius</option>
+        <option value="Fahrenheit">Fahrenheit</option>
+      </select>
+    </div>
+    <div>=</div>
+    <div>
+      <input type="number" placeholder="Result Temperature Here" id="finalTemp"/>
+      <br />
+      <label for="temperature">Measurement:</label>
+      <select name="temperature" id="totemp">
+        <option value="Celsius">Celsius</option>
+        <option value="Fahrenheit">Fahrenheit</option>
+      </select>
+    </div>
+    <button id="convert" class="btn btn-primary">Convert</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
